@@ -1,0 +1,6 @@
+# Security scan baseline (keel-linux/.github, security-scan.yml): findings
+# that were read and are not a risk, one per line, the fingerprint and why.
+shellcheck:SC1090:overlay/usr/lib/inithooks/firstboot.d/40moodle:c57db62f520d shell lint, not a security risk: a sourced file whose path is computed, shellcheck cannot follow it
+shellcheck:SC2046:conf.d/main:0ce3b38d3678 shell lint, not a security risk: unquoted command substitution over values the script itself produces
+shellcheck:SC2046:conf.d/main:2525f9cdfe10 shell lint, not a security risk: unquoted command substitution over values the script itself produces
+shellcheck:SC2209:conf.d/main:e08ff87fc4b3 shell lint, not a security risk: assigns a literal word, as intended
